@@ -1,10 +1,29 @@
+.icon {
+    display: block;
+    margin: auto;
+    border: solid 4px #ffffff;
+    border-radius: 50%;
+}
 .title {
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
     font-size: 250%;
+    text-align: center;
 }
 
 body {
-    background: #191919;
-    
+    background: #000000;
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+div {
+    text-align: none;
+}
+
+pre {
+    text-align: center;
 }
