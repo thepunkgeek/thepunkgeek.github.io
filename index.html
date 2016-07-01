@@ -5,8 +5,8 @@
      <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <title>The Punk Geek</title>
     <meta name="description" content="Radio: puerto rican, genderqueer, anarcho-communist, cyberpunk. Trying to better the world with technology." />
-        <meta name="author" content="ThePunkGeek" />
-        <meta name="copyright" content="ThePunkGeek, 2016" />
+        <meta name="author" content="Radio aka The Punk Geek" />
+        <meta name="copyright" content="Radio aka The Punk Geek, 2016" />
         <meta name="rating" content="ALL" />
         <meta name="robots" content="index,follow" />
         <meta name="viewport" content="width=device-width" />
@@ -28,6 +28,40 @@
        ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝
                                                                                                      
     </pre>
-<img class="icon" src="http://66.media.tumblr.com/avatar_bf3a62f6f298_128.png" />
+<!-- <img class="icon" src="http://66.media.tumblr.com/avatar_bf3a62f6f298_128.png" /> -->
+<h1 style=" text-align: center">password-hasher</h1>
+<p>
+     Below is the input for the  open-source javascript password hasher that I've written.
+     How does it work?
+     It takes three inputs: A base password, the URL you want a password for, and the number of iterations to hash.
+     The first thing it does create a SHA1 hash of the Password and URL individually, then it takes those hashes puts them together,
+     and does sha256 hashes of that concatenation for the number of iterations specified.
+</p>
+
+
+
+<form>
+     <p class="form">
+          <label for="password">Password:</label>
+          <input id="password" type="password" autofocus="on"></input>
+          <br></br>
+     </p>
+     <p class="form">
+          <label for="url">URL:</label>
+          <input id="url" type="url"></input>
+          <br></br>
+     </p>
+     <p class="form">
+          <label for="iterations">Iteration(s)</label>
+          <input id="iterations" type="number" min="1" max="100" value="1"></input>
+     </p>
+</form>
+          <input id="submit" type="button" value="Submit"></input>
+
+
+
+
+
+
 </body>
 </html>
