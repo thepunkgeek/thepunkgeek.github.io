@@ -12,7 +12,7 @@
 		display: block !important;
 		text-align: center;
 		font-family: Tahoma, Geneva, sans-serif;
-		font-size: 185%;
+		font-size: 160%;
 	}
 	.desktop{
 		display: none !important;
@@ -58,11 +58,11 @@ input {
 }
 
 section{
-	width: 500px;
+	width: 400px;
 	margin: auto;
 	
 }
 
 footer {
-	
+	 
 }
