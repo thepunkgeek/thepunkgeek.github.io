@@ -1,19 +1,37 @@
+@media screen and (min-width: 1000px){
+	.desktop{
+		display: block !important;
+	}
+	.mobile{
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.mobile{
+		display: block !important;
+		text-align: center;
+		font-family: Tahoma, Geneva, sans-serif;
+		font-size: 185%;
+	}
+	.desktop{
+		display: none !important;
+	}
+}
+
 .icon {
     display: block;
     margin: auto;
     border: solid 4px #ffffff;
     border-radius: 50%;
 }
-.title {
-    color: #ffffff;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 250%;
-    text-align: center;
-}
 
 body {
     background: #000000;
     color: #ffffff;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	margin: auto;
 }
 
 p {
@@ -21,22 +39,9 @@ p {
     text-align: center;
 }
 
-div {
-    text-align: none;
-}
-
-pre {
-    text-align: center;
-    color: white;
-}
-
 form {
     margin: auto;
     display: table;
-}
-
-p.form {
-    display: table-row;
 }
 
 label {
@@ -50,4 +55,14 @@ input {
 #submit {
      display: table;
      margin: 0 auto;
+}
+
+section{
+	width: 500px;
+	margin: auto;
+	
+}
+
+footer {
+	
 }
