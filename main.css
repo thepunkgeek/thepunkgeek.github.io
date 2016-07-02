@@ -39,18 +39,21 @@ p {
     text-align: center;
 }
 
-form {
-    margin: auto;
-    display: table;
-}
-
 label {
-    display: table-cell;
+	display: table-row;
+	
 }
 
 input {
-    display: table-cell;
+	display: table-row;
 }
+
+.form {
+    margin: auto;
+    display: table;
+	
+}
+
 
 #submit {
      display: table;
@@ -58,7 +61,7 @@ input {
 }
 
 section{
-	width: 400px;
+	width: 350px;
 	margin: auto;
 	
 }
