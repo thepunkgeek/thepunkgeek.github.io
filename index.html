@@ -7,27 +7,27 @@
      <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>The Punk Geek</title>
+  <title>The Punk Geek</title>
     <meta name="description" content="Radio: puerto rican, genderqueer, anarcho-communist, cyberpunk. Trying to better the world with technology." />
         <meta name="author" content="Radio aka The Punk Geek" />
         <meta name="copyright" content="Radio aka The Punk Geek, 2016" />
         <meta name="rating" content="ALL" />
         <meta name="robots" content="index,follow" />
         <meta name="viewport" content="width=device-width" />
-   
-    
+
+<script src="main.js"></script>
 </head>
 
 <body>
 	<header>
 		<pre class="desktop">
 
-		    ████████╗██╗  ██╗███████╗    ██████╗ ██╗   ██╗███╗   ██╗██╗  ██╗     ██████╗ ███████╗███████╗██╗  ██╗			
-		    ╚══██╔══╝██║  ██║██╔════╝    ██╔══██╗██║   ██║████╗  ██║██║ ██╔╝    ██╔════╝ ██╔════╝██╔════╝██║ ██╔╝			
-		       ██║   ███████║█████╗      ██████╔╝██║   ██║██╔██╗ ██║█████╔╝     ██║  ███╗█████╗  █████╗  █████╔╝ 			
-		       ██║   ██╔══██║██╔══╝      ██╔═══╝ ██║   ██║██║╚██╗██║██╔═██╗     ██║   ██║██╔══╝  ██╔══╝  ██╔═██╗ 			
-		       ██║   ██║  ██║███████╗    ██║     ╚██████╔╝██║ ╚████║██║  ██╗    ╚██████╔╝███████╗███████╗██║  ██╗			
-		       ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝			
+		    ████████╗██╗  ██╗███████╗    ██████╗ ██╗   ██╗███╗   ██╗██╗  ██╗     ██████╗ ███████╗███████╗██╗  ██╗
+		    ╚══██╔══╝██║  ██║██╔════╝    ██╔══██╗██║   ██║████╗  ██║██║ ██╔╝    ██╔════╝ ██╔════╝██╔════╝██║ ██╔╝
+		       ██║   ███████║█████╗      ██████╔╝██║   ██║██╔██╗ ██║█████╔╝     ██║  ███╗█████╗  █████╗  █████╔╝
+		       ██║   ██╔══██║██╔══╝      ██╔═══╝ ██║   ██║██║╚██╗██║██╔═██╗     ██║   ██║██╔══╝  ██╔══╝  ██╔═██╗
+		       ██║   ██║  ██║███████╗    ██║     ╚██████╔╝██║ ╚████║██║  ██╗    ╚██████╔╝███████╗███████╗██║  ██╗
+		       ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝
           </pre>
 		<div class="mobile">
 			<h1>The Punk Geek</h1>
@@ -37,14 +37,14 @@
 
 <h2 style=" text-align: center">password-hasher</h2>
 
-<form>
+<form action="" name="form1">
      <p class="form">
           <label for="password">Password:</label>
-          <input id="password" type="password" autofocus="on"></input>
+          <input id="password" type="password" name="pass" autofocus="on"></input>
      </p>
      <p class="form">
           <label for="url">URL:</label>
-          <input id="url" type="url"></input>
+          <input id="url" type="url" name="url"></input>
      </p>
      <p class="form">
           <label for="iterations">Iteration(s)</label>
@@ -52,6 +52,14 @@
      </p>
 </form>
           <input id="submit" type="button" value="Submit"></input>
+
+
+
+
+
+
+
+
 <section>
 <p>Above is a front-end for the open-source javascript password hasher that I've written.</p>
 <p>It works by taking three inputs:<br /> A base password, the URL you want a password for, and the number of iterations to hash.

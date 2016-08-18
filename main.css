@@ -41,7 +41,7 @@ p {
 
 label {
 	display: table-row;
-	
+
 }
 
 input {
@@ -51,7 +51,7 @@ input {
 .form {
     margin: auto;
     display: table;
-	
+
 }
 
 
@@ -63,9 +63,10 @@ input {
 section{
 	width: 350px;
 	margin: auto;
-	
+
 }
 
 footer {
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
