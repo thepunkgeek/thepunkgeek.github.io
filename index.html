@@ -24,8 +24,8 @@
 
 		    ████████╗██╗  ██╗███████╗    ██████╗ ██╗   ██╗███╗   ██╗██╗  ██╗     ██████╗ ███████╗███████╗██╗  ██╗
 		    ╚══██╔══╝██║  ██║██╔════╝    ██╔══██╗██║   ██║████╗  ██║██║ ██╔╝    ██╔════╝ ██╔════╝██╔════╝██║ ██╔╝
-		       ██║   ███████║█████╗      ██████╔╝██║   ██║██╔██╗ ██║█████╔╝     ██║  ███╗█████╗  █████╗  █████╔╝
-		       ██║   ██╔══██║██╔══╝      ██╔═══╝ ██║   ██║██║╚██╗██║██╔═██╗     ██║   ██║██╔══╝  ██╔══╝  ██╔═██╗
+		      ██║   ███████║█████╗      ██████╔╝██║   ██║██╔██╗ ██║█████╔╝     ██║  ███╗█████╗  █████╗  █████╔╝
+		      ██║   ██╔══██║██╔══╝      ██╔═══╝ ██║   ██║██║╚██╗██║██╔═██╗     ██║   ██║██╔══╝  ██╔══╝  ██╔═██╗
 		       ██║   ██║  ██║███████╗    ██║     ╚██████╔╝██║ ╚████║██║  ██╗    ╚██████╔╝███████╗███████╗██║  ██╗
 		       ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝
           </pre>
@@ -40,18 +40,20 @@
 <form action="" name="form1">
      <p class="form">
           <label for="password">Password:</label>
-          <input id="password" type="password" name="pass" autofocus="on"></input>
+          <input id="password" type="text" name="formPass" autofocus="on"></input>
      </p>
      <p class="form">
           <label for="url">URL:</label>
-          <input id="url" type="url" name="url"></input>
+          <input id="url" type="text" name="formUrl"></input>
      </p>
      <p class="form">
           <label for="iterations">Iteration(s)</label>
-          <input id="iterations" type="number" min="1" max="100" value="1"></input>
+          <input id="iterations" name="iterations" type="number" min="1" max="100" value="1"></input>
+     </p>
+     <p>
+         <input type="button" id="submit" value="Submit" name="btnCheckForm"></input>
      </p>
 </form>
-          <input id="submit" type="button" value="Submit"></input>
 
 
 

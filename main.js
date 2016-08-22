@@ -1,22 +1,35 @@
 var myForm = document.form1;
 
+
 function btnCheckFormClick(e) {
-    var pass = myForm.pass;
-    var url = myForm.url;
+    var formPass = myForm.formPass;
+    var formUrl = myForm.formUrl;
 
-  if (pass.value == "" || url.value == "") {
-    alert("Please complete all of form");
+    if (txtAge.value == "" || txtName.value == "") {
+        alert("Please complete all of the form");
 
-    if (pass.value == "") {
-      pass.focus();
+        if (txtName.value == "") {
+            txtName.focus();
+        } else {
+            txtAge.focus();
+        }
     } else {
-      url.focus();
-    }
-    } else {
-    alert("Thanks for completing the form!");
+        alert("Thanks for completing the form " + txtName.value);
     }
 }
 
-function urlBlur(e) {
+function txtAgeBlur(e) {
+    var target = e.target;
 
+    if (isNan(target.value)) {
+        alert("Please enter a valid age");
+        target.focus();
+        target.select();
+    }
 }
+function txtNameChange(e) {
+    alert("Hi " + e.target.value);
+}
+myForm.txtName.addEventListener("change", txtNameChange);
+myForm.txtAge.addEventListener("blur", txtAgeBlur);
+myForm.btnCheckForm.addEventListener("click", btnCheckFormClick);
